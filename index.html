@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>ArcManager - Company Profile</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body class="bg-blue-50 text-gray-800 font-sans scroll-smooth">
+        <main
+            class="max-w-screen-xl mx-auto shadow-lg border border-blue-200 mt-4"
+        >
+            <!-- Header -->
+            <header
+                class="flex items-center border-b border-blue-200 px-4 py-2 bg-blue-100"
+            >
+                <img
+                    src="assets/images/iconLogo.png"
+                    alt="ArcManager Logo"
+                    class="h-10 w-10 object-cover ring-1 ring-blue-400"
+                />
+                <h1 class="ml-2 font-semibold text-lg">ArcManager</h1>
+            </header>
+
+            <!-- Navigation -->
+            <nav
+                class="flex flex-wrap justify-center gap-2 sm:gap-4 py-3 bg-white sticky top-0 z-10 border-b border-blue-200"
+            >
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#profile" class="nav-link">Our Profile</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#message" class="nav-link">Message Us</a>
+            </nav>
+
+            <!-- Home -->
+            <section id="home" class="px-6 py-10 text-center">
+                <h2 class="text-2xl font-bold mb-2">
+                    Hi <span id="welcomeName">Visitor</span>, Welcome To
+                    ArcManager!
+                </h2>
+                <p class="text-lg text-gray-600">
+                    We create powerful digital tools that help businesses manage
+                    operations, ensure quality, build brands, and scale
+                    efficiently through technology.
+                </p>
+            </section>
+
+            <!-- Profile -->
+            <section id="profile" class="bg-blue-50 py-10 px-6">
+                <h2 class="text-xl font-bold mb-4 text-center">Our Profile</h2>
+                <article class="grid md:grid-cols-2 gap-4 items-center">
+                    <figure
+                        class="h-80 bg-blue-100 flex items-center justify-center rounded shadow"
+                    >
+                        <img
+                            src="assets/images/ArcManager.png"
+                            alt="ArcManager Company Logo"
+                            class="h-80 object-contain"
+                        />
+                    </figure>
+                    <section class="space-y-3 text-sm">
+                        <p>
+                            <strong>About Us:</strong> Founded in Surabaya,
+                            ArcManager delivers enterprise-grade technology
+                            solutions including robust REST APIs, sophisticated
+                            business management platforms, and tailored digital
+                            services that transform how organizations operate.
+                        </p>
+                        <p>
+                            <strong>Vision:</strong> To be the leading
+                            technology partner empowering businesses through
+                            scalable, innovative, and reliable digital
+                            infrastructure that drives sustainable growth and
+                            operational excellence.
+                        </p>
+                        <p>
+                            <strong>Mission:</strong> We deliver cutting-edge
+                            software solutions that streamline operations,
+                            enhance productivity, and enable organizations to
+                            achieve their strategic objectives through
+                            intelligent design and seamless technology
+                            integration.
+                        </p>
+                    </section>
+                </article>
+            </section>
+
+            <!-- Portfolio -->
+            <section
+                id="portfolio"
+                class="py-10 px-6 bg-blue-50 relative overflow-hidden"
+            >
+                <h2 class="text-xl font-bold mb-6 text-center">
+                    Our Portfolio
+                </h2>
+
+                <section
+                    class="relative w-full h-64 md:h-80 overflow-hidden rounded shadow-lg"
+                >
+                    <section
+                        id="portfolioCarousel"
+                        class="flex transition-transform duration-700 ease-in-out h-full"
+                    >
+                        <!-- Portfolio Items -->
+                        <article
+                            class="min-w-full flex items-center bg-white rounded shadow"
+                        >
+                            <figure
+                                class="w-2/5 h-full flex items-center justify-center bg-blue-100"
+                            >
+                                <img
+                                    src="assets/images/garment.png"
+                                    alt="Garment Manager"
+                                    class="w-32 sm:w-48 md:w-64 lg:w-80 xl:w-96 max-h-72 object-contain"
+                                />
+                            </figure>
+                            <section class="w-3/5 p-6">
+                                <h3 class="text-lg font-bold mb-2">
+                                    Garment Manager App
+                                </h3>
+                                <p class="text-sm text-gray-600">
+                                    An app designed for garment factories to
+                                    manage production, track inventory, and
+                                    streamline operations efficiently.
+                                </p>
+                            </section>
+                        </article>
+
+                        <article
+                            class="min-w-full flex items-center bg-white rounded shadow"
+                        >
+                            <figure
+                                class="w-2/5 h-full flex items-center justify-center bg-blue-100"
+                            >
+                                <img
+                                    src="assets/images/TroubleshootManager.png"
+                                    alt="Troubleshoot Manager"
+                                    class="w-32 sm:w-48 md:w-64 lg:w-80 xl:w-96 max-h-72 object-contain"
+                                />
+                            </figure>
+                            <section class="w-3/5 p-6">
+                                <h3 class="text-lg font-bold mb-2">
+                                    Troubleshoot Manager
+                                </h3>
+                                <p class="text-sm text-gray-600">
+                                    A support platform that helps users identify
+                                    and fix technical issues quickly with guided
+                                    troubleshooting steps.
+                                </p>
+                            </section>
+                        </article>
+
+                        <article
+                            class="min-w-full flex items-center bg-white rounded shadow"
+                        >
+                            <figure
+                                class="w-2/5 h-full flex items-center justify-center bg-blue-100"
+                            >
+                                <img
+                                    src="assets/images/ArcApi.png"
+                                    alt="ArcManager API"
+                                    class="w-32 sm:w-48 md:w-64 lg:w-80 xl:w-96 max-h-72 object-contain"
+                                />
+                            </figure>
+                            <section class="w-3/5 p-6">
+                                <h3 class="text-lg font-bold mb-2">
+                                    ArcManager REST API
+                                </h3>
+                                <p class="text-sm text-gray-600">
+                                    Reliable backend API powering multiple
+                                    projects, built for speed and scalability in
+                                    production environments.
+                                </p>
+                            </section>
+                        </article>
+
+                        <article
+                            class="min-w-full flex items-center bg-white rounded shadow"
+                        >
+                            <figure
+                                class="w-2/5 h-full flex items-center justify-center bg-blue-100"
+                            >
+                                <img
+                                    src="assets/images/QualityArc.png"
+                                    alt="QualityArc"
+                                    class="w-32 sm:w-48 md:w-64 lg:w-80 xl:w-96 max-h-72 object-contain"
+                                />
+                            </figure>
+                            <section class="w-3/5 p-6">
+                                <h3 class="text-lg font-bold mb-2">
+                                    QualityArc
+                                </h3>
+                                <p class="text-sm text-gray-600">
+                                    Comprehensive testing platform combining
+                                    Cypress automation with manual QA workflows
+                                    and bug tracking.
+                                </p>
+                            </section>
+                        </article>
+
+                        <article
+                            class="min-w-full flex items-center bg-white rounded shadow"
+                        >
+                            <figure
+                                class="w-2/5 h-full flex items-center justify-center bg-blue-100"
+                            >
+                                <img
+                                    src="assets/images/CreativeArc.png"
+                                    alt="CreativeArc"
+                                    class="w-32 sm:w-48 md:w-64 lg:w-80 xl:w-96 max-h-72 object-contain"
+                                />
+                            </figure>
+                            <section class="w-3/5 p-6">
+                                <h3 class="text-lg font-bold mb-2">
+                                    CreativeArc
+                                </h3>
+                                <p class="text-sm text-gray-600">
+                                    Design management system for brand assets,
+                                    prototypes, and creative workflows.
+                                </p>
+                            </section>
+                        </article>
+                    </section>
+
+                    <!-- Carousel Controls -->
+                    <button
+                        id="prevBtn"
+                        class="absolute top-1/2 left-2 -translate-y-1/2 bg-blue-600 text-white rounded-full p-2 hover:bg-blue-500"
+                    >
+                        &#10094;
+                    </button>
+                    <button
+                        id="nextBtn"
+                        class="absolute top-1/2 right-2 -translate-y-1/2 bg-blue-600 text-white rounded-full p-2 hover:bg-blue-500"
+                    >
+                        &#10095;
+                    </button>
+                </section>
+            </section>
+
+            <!-- Message Us -->
+            <section id="message" class="bg-blue-50 py-10 px-6">
+                <h2 class="text-xl font-bold mb-4 text-center">Message Us</h2>
+                <section class="flex flex-col md:flex-row gap-6">
+                    <form id="messageForm" class="flex flex-col gap-3 md:w-1/2">
+                        <label>
+                            Name:
+                            <input
+                                type="text"
+                                id="name"
+                                class="input-box"
+                                placeholder="Enter your full name"
+                                required
+                            />
+                            <small id="nameError" class="error-text"></small>
+                        </label>
+                        <label>
+                            Email:
+                            <input
+                                type="email"
+                                id="email"
+                                class="input-box"
+                                placeholder="example@email.com"
+                                required
+                            />
+                            <small id="emailError" class="error-text"></small>
+                        </label>
+                        <label>
+                            Phone:
+                            <input
+                                type="number"
+                                id="phone"
+                                class="input-box"
+                                placeholder="08xxxxxxxxxx"
+                                required
+                                inputmode="numeric"
+                                pattern="[0-9]*"
+                            />
+                            <small id="phoneError" class="error-text"></small>
+                        </label>
+
+                        <!-- Birth date -->
+                        <label>
+                            Birth Date:
+                            <input
+                                type="date"
+                                id="birthDate"
+                                class="input-box"
+                                placeholder="dd/mm/yyyy"
+                                required
+                            />
+                            <small
+                                id="birthDateError"
+                                class="error-text"
+                            ></small>
+                        </label>
+
+                        <!-- Gender -->
+                        <fieldset class="flex gap-4">
+                            <legend class="font-medium">Gender:</legend>
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="gender"
+                                    value="Male"
+                                    required
+                                />
+                                Male
+                            </label>
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="gender"
+                                    value="Female"
+                                    required
+                                />
+                                Female
+                            </label>
+                            <small id="genderError" class="error-text"></small>
+                        </fieldset>
+
+                        <label>
+                            Message:
+                            <textarea
+                                id="messageText"
+                                rows="4"
+                                class="input-box"
+                                placeholder="Type your message here..."
+                                required
+                            ></textarea>
+                            <small
+                                id="messageTextError"
+                                class="error-text"
+                            ></small>
+                        </label>
+                        <button type="submit" class="btn-submit">Submit</button>
+                    </form>
+
+                    <aside
+                        id="infoBox"
+                        class="border p-4 rounded md:w-1/2 bg-white text-sm leading-relaxed"
+                    >
+                        <h3 class="mb-2 font-bold">Current time :</h3>
+                        <time id="currentTime" class="mb-4 block"
+                            >Loading...</time
+                        >
+
+                        <section>
+                            <p>
+                                <strong>Name:</strong>
+                                <span id="outName">-</span>
+                            </p>
+                            <p>
+                                <strong>Email:</strong>
+                                <span id="outEmail">-</span>
+                            </p>
+                            <p>
+                                <strong>Phone:</strong>
+                                <span id="outPhone">-</span>
+                            </p>
+                            <p>
+                                <strong>Birth Date:</strong>
+                                <span id="outBirthDate">-</span>
+                            </p>
+                            <p>
+                                <strong>Gender:</strong>
+                                <span id="outGender">-</span>
+                            </p>
+                            <p>
+                                <strong>Message:</strong>
+                                <span id="outMessage">-</span>
+                            </p>
+                        </section>
+                    </aside>
+                </section>
+            </section>
+
+            <!-- Footer -->
+            <footer class="text-xs text-center py-3 border-t border-blue-200">
+                &copy; 2025 ArcManager | Created by Alvin Gary <br />
+                RevoU Coding Camp Mini Project
+            </footer>
+        </main>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
